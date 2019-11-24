@@ -3,7 +3,7 @@ Description=mumjolandia
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/mumjolandia 'ssh server x'
+ExecStart=mumjolandia 'ssh server x'
 Restart=on-failure
 
 [Install]
