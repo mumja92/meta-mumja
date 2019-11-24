@@ -12,7 +12,7 @@ S = "${WORKDIR}/git"
 RDEPENDS_${PN} += "python3"
 RDEPENDS_${PN} += "python3-core"
 
-do_install_append () {
+do_install() {
     install -d ${D}${USRBINPATH}/mumjolandia_files/src
     install -m 0755 main.py ${D}${USRBINPATH}/mumjolandia_files/mumjolandia.py
     cp -r src ${D}${USRBINPATH}/mumjolandia_files/
