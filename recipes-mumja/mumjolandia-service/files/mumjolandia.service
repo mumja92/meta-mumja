@@ -1,0 +1,10 @@
+[Unit]
+Description=mumjolandia
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mumjolandia 'ssh server x'
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
