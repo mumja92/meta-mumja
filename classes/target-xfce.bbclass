@@ -1,3 +1,5 @@
+inherit core-image
+
 IMAGE_INSTALL_XFCE = " \
     packagegroup-core-boot \
     packagegroup-core-x11 \
